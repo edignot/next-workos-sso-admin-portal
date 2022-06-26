@@ -120,11 +120,11 @@ const Button = styled('button', {
 const AlertDialogDemo = () => (
   <AlertDialog>
     <AlertDialogTrigger asChild>
-      <Button>Logout</Button>
+      <Button variant="red">Logout</Button>
     </AlertDialogTrigger>
     <AlertDialogContent>
       <AlertDialogTitle>Are you sure you want to Logout?</AlertDialogTitle>
-      <AlertDialogDescription>...</AlertDialogDescription>
+      <AlertDialogDescription></AlertDialogDescription>
       <Flex css={{ justifyContent: 'flex-end' }}>
         <AlertDialogCancel asChild>
           <Button variant="mauve" css={{ marginRight: 25 }}>

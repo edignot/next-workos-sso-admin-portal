@@ -1,4 +1,4 @@
-import React from 'react'
+import styles from '../styles/Sso.module.css'
 
 const Sso = () => {
   const ssoHandler = async () => {
@@ -23,8 +23,10 @@ const Sso = () => {
   }
 
   return (
-    <div>
-      <button onClick={() => ssoHandler()}>SSO</button>
+    <div className={styles.main}>
+      <button onClick={() => ssoHandler()} className={styles.button}>
+        Sign In With Okta
+      </button>
     </div>
   )
 }

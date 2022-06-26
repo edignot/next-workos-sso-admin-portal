@@ -1,3 +1,4 @@
+import url from '../../lib/url'
 import WorkOS from '@workos-inc/node'
 
 const workos = new WorkOS(process.env.WORKOS_API_KEY)
@@ -8,7 +9,7 @@ const ssoApiHandler = async (req, res) => {
     const authorizationURL = workos.sso.getAuthorizationURL({
       clientID,
       organization: 'org_01G2TKRPR28XB702EF71EA8BY6',
-      redirectURI: `http://localhost:3000/api/callback`,
+      redirectURI: `${url}/api/callback`,
     })
 
     res.status(200).json({ authorizationURL })
