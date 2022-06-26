@@ -14,7 +14,7 @@ export default function Home() {
       <Link href="/sso">
         <h1>SSO &rarr;</h1>
       </Link>
-      <Link href="/sso">
+      <Link href="/">
         <h1>Admin Portal &rarr;</h1>
       </Link>
       <Link href="/">
